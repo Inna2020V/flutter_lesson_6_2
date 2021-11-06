@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
       home: Scaffold(
-    body: ButterfliesList(),
+    body: const ButterfliesList(),
     appBar: AppBar(
       title: const Text('Butterflies'),
       centerTitle: true,
@@ -12,6 +12,8 @@ void main() {
 }
 
 class ButterfliesList extends StatefulWidget {
+  const ButterfliesList({Key? key}) : super(key: key);
+
   @override
   _ButterfliesListState createState() => _ButterfliesListState();
 }
